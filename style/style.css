@@ -533,3 +533,59 @@ footer img{
     }
     
 }
+
+@media screen and (max-width: 780px){
+    .logo{
+        width: 20em;
+    }
+
+    .about_us{
+        height: 70vh;
+    }
+
+    .our_facts{
+        height: 70vh;
+    }
+
+    .menu{
+        height: 70vh;
+    }
+
+    .gallery{
+        height: 70vh;
+    }
+
+    footer img{
+        width: 15em;
+    }
+
+    .footer__contacts{
+        flex-direction: column;
+    }
+
+    .footer__contacts div + div{
+        margin-top: 1em;
+    }
+
+    .footer__contacts span{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .about_us{
+        height: 50vh;
+    }
+
+    .our_facts{
+        height: 50vh;
+    }
+
+    .menu{
+        height: 50vh;
+    }
+
+    .gallery{
+        height: 50vh;
+    }
+}
