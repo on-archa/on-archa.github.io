@@ -14,6 +14,7 @@
 
 a{
     text-decoration: none;
+    color: #fff;
 }
 
 .preloader{
@@ -117,6 +118,10 @@ nav{
     
 }
 
+.btn:focus{
+    outline: none;
+}
+
 .btn:hover{
     color: var(--btn_color);
     background-color: #fff;
@@ -151,8 +156,10 @@ nav{
 .main_title button:hover{
     border: 1px solid #fff;
     background-color: var( --btn_color);
+}
+
+.main_title button a:hover{
     color: #fff;
-    
 }
 
 .about_us{
@@ -501,12 +508,12 @@ footer img{
     }
 
     .burger::before{
-        transform: translateY(-8px);
+        transform: translateY(-0.6em);
         width: 2em;
     }
 
     .burger::after{
-       transform: translateY(8px);
+       transform: translateY(0.6em);
        width: 2em;
     }
 
@@ -572,20 +579,121 @@ footer img{
     }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
     .about_us{
-        height: 50vh;
+        height: 60vh;
     }
 
     .our_facts{
-        height: 50vh;
+        height: 60vh;
     }
 
     .menu{
-        height: 50vh;
+        height: 60vh;
     }
 
     .gallery{
-        height: 50vh;
+        height: 60vh;
+    }
+
+    .menu_btn{
+        width: 4.5em;
+        height: 4.5em;
+    }
+
+    .logo{
+        width: 25em;
+    }
+
+    .main_title h2{
+        font-size: 5rem;
+    }
+
+    .main_title h4{
+        font-size: 1.7rem;
+        max-width: 18em;
+    }
+
+    .layer-2{
+        height: 65%;
+    
+    }
+
+    .about_block, .about_block1{
+        width: 50%;
+    }
+
+    .about_block_adaptive{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 490px){
+    .about_block_intro{
+        padding: 3.5em;
+    }
+
+    .main_title button{
+        background-color: var(--btn_color);
+        color: #fff;
+        border: 1px solid #fff
+    }
+
+    .main_title button:hover{
+        border: 1px solid var( --btn_color);
+        background-color: #fff;
+    }
+
+    .main_title button a:hover{
+        color: var( --btn_color);
+    }
+
+    .menu_block{
+        width: 66%;
+        margin-left: 17%;
+    }
+
+    .gallery{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .layer-2{
+        height: 50%;
+        width: 50%;
+    }
+
+    .footer__block{
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    footer img{
+        width: 20em;
+    }
+
+    .footer__contacts{
+        margin-top: -1em;
+    }
+
+    .footer__contacts div span{
+        font-size: 2em;
+    }
+
+    .footer__contacts img{
+        width: 1.7em;
+    }
+
+    .social{
+        margin-top: 4em;
+        margin-bottom: 3em;
+    }
+
+    .social img{
+        width: 3.5em;
+    }
+
+    .social a + a{
+        margin-left: 5em;
     }
 }
