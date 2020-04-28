@@ -153,12 +153,16 @@ nav{
     color: var( --btn_color);
 }
 
+.main_title button a{
+    color: var(--btn_color);
+}
+
 .main_title button:hover{
     border: 1px solid #fff;
     background-color: var( --btn_color);
 }
 
-.main_title button a:hover{
+.main_title button:hover a{
     color: #fff;
 }
 
