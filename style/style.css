@@ -639,8 +639,12 @@ footer img{
 
     .main_title button{
         background-color: var(--btn_color);
-        color: #fff;
+
         border: 1px solid #fff
+    }
+
+    .main_title button a{
+        color: #fff;
     }
 
     .main_title button:hover{
