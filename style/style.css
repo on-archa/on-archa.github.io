@@ -12,6 +12,16 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar{
+    width: 4px;
+    background-color: var(--btn_color);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--bg_color);
+    border-radius: 6px;
+}
+
 a{
     text-decoration: none;
     color: #fff;
@@ -26,6 +36,231 @@ a{
     transition: all 1s;
     opacity: 1;
     visibility: visible;
+}
+
+.basket{
+    position: fixed;
+    right: 0;
+    top: 50%;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+    box-shadow: 1px 1px 20px 1px #000;
+}
+
+.basket:hover{
+    box-shadow: inset 1px 1px 20px 1px #000;;
+}
+
+.basket:hover i{
+    color: var(--bgc_add);
+}
+
+.basket i{
+    color: darkgreen;
+    font-size: 2em;
+    transition: ease-in-out 0.4s;
+}
+
+
+.basket{
+    display: flex;
+    align-items: center;
+}
+
+.basket i{
+    font-size: 2em;
+    transition: ease-in-out 0.3s;
+}
+
+.basket span{
+    background-color: red;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    width: 1.5em;
+    height: 1.5em;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-7px);
+}
+
+.basket__window--item{
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(31, 30, 30, 0.863);
+    z-index: 5;
+}
+
+.total button{
+    padding: 8px 15px;
+    border-radius: 10px;
+    box-shadow: none;
+    background-color: var(--bgc_add);
+    color: #fff;
+    border: 1px solid var(--bgc_add);
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.total button:focus{
+    outline: none;
+}
+
+.total button:hover{
+    border-radius: 20px;
+}
+
+.goods--info{
+    background-color: #fff;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 1em;
+    padding: 20px 15px;
+    overflow-y: scroll;
+    height: 80%;
+}
+
+.goods--info > .span{
+    width: 2em;
+    height: 1px;
+    background-color: rgb(99, 99, 99);
+    position: relative;
+    margin-left: auto;
+    transform: rotate(45deg);
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+.goods--info .span::before{
+    content: "";
+    width: 2em;
+    height: 1px;
+    background-color: rgb(99, 99, 99);
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+.basket__window--item .line{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+
+}
+
+.total span > span{
+    margin-left: 1em;
+    font-weight: 600;
+}
+
+.goods--info > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.goods--info > div + div{
+    margin-top: 2em;
+}
+
+.good--info img{
+    width: 8em;
+}
+
+.good--info{
+    display: flex;
+}
+
+.good--info__name{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 0.7em;
+}
+
+.good--info__name span{
+    font-weight: 600;
+}
+
+
+.good--info__name span + span{
+    color: rgb(148, 148, 148);
+    font-weight: 400;
+}
+
+.basket--price__block{
+    display: flex;
+    align-items: center;
+}
+
+.basket--price__block span{
+    margin-right: 1.5em;
+}
+
+.basket--price__block i{
+    margin-right: 0.4em;
+    font-size: 1.5em;
+    transform: rotate(45deg);
+    cursor: pointer;
+    color: red;
+}
+
+.form__block{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__block h3{
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+
+.form__block form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__block form input{
+    margin-top: 2.5em;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 20em;
+    outline: none;
+    padding: 5px;
+    transition: ease-in-out 0.3s;
+}
+
+.form__block form input:focus{
+    padding-left: 15px;
+}
+
+.form__block button{
+    margin-top: 4em;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--bgc_add);
+    padding: 10px 0;
+    width: 10em;
+    color: #fff;
+    align-self: center;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    outline: none;
+}
+
+.form__block button:hover{
+    border-radius: 30px;
+    background-color: #fff;
+    border: 1px solid var(--bgc_add);
+    color: var(--bgc_add);
 }
 
 .loader span{

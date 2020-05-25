@@ -1,0 +1,83 @@
+[
+    {
+        "type": "first--course",
+        "name": "Беш-бармак",
+        "id": "five-fingers",
+        "price": 120,
+        "weight": 450,
+        "discription": "Очень вкусное блюдо которое может удивить вас на все 100.",
+        "image": "../images/facts.jpg",
+        "popular": true
+    },
+    {
+        "type": "first--course",
+        "name": "Манты",
+        "id": "mantys",
+        "price": 110,
+        "weight": 400,
+        "discription": "Очень вкусное блюдо которое может удивить вас на все 100.",
+        "image": "../images/menu.jpg",
+        "popular": true
+    },
+    {
+        "type": "second--course",
+        "name": "Куурдак",
+        "id": "kuurdaks",
+        "price": 110,
+        "weight": 400,
+        "discription": "Очень вкусное блюдо которое может удивить вас на все 100.",
+        "image": "../images/facts.jpg",
+        "popular": false
+    },
+    {
+        "type": "second--course",
+        "name": "Бризоль",
+        "id": "brizols",
+        "price": 140,
+        "weight": 600,
+        "discription": "Мясной рулет с очень вкусной начинкой и идеальный гарниром.",
+        "image": "../images/facts.jpg",
+        "popular": true
+    },
+    {
+        "type": "salad",
+        "name": "Салат свежий",
+        "id": "fresh_salads",
+        "price": 60,
+        "weight": 230,
+        "discription": "Вкусный салат окрашенный всеми цветами весны.",
+        "image": "../images/facts.jpg",
+        "popular": false
+    },
+    {
+        "type": "salad",
+        "name": "Салат Наполеон",
+        "id": "napaleon_salads",
+        "price": 100,
+        "weight": 300,
+        "discription": "Очень вкусный салат с кусочками куриной грудки.",
+        "image": "../images/facts.jpg",
+        "popular": true
+    },
+    {
+        "type": "drinks",
+        "name": "Компот",
+        "id": "kompots",
+        "price": 70,
+        "weight": 1000,
+        "discription": "Охлажденный натуральный напиток из сухофруктов.",
+        "image": "../images/facts.jpg",
+        "popular": true
+    },
+    {
+        "type": "desert",
+        "name": "Яблочный пирог",
+        "id": "apple-cakes",
+        "price": 25,
+        "weight": 150,
+        "discription": "Воздушный пирог с яблочной начинкой.",
+        "image": "../images/facts.jpg",
+        "popular": true
+    }
+
+]

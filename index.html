@@ -6,6 +6,9 @@
     <title>on-archa</title>
     <link href="./style/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="icon" href="./icons/restaurant.png" type="image/x-icon">
+
 </head>
 <body>
     <div class="preloader">
@@ -14,6 +17,12 @@
             <span id="preloader-percent">0%</span>
         </div>
     </div>
+    <div class="basket" onclick="basket.render()">       
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>        
+    </div>
+    <section class="basket__window">
+
+    </section>
     <section class="header" id="main">
         <nav>
 
@@ -23,6 +32,7 @@
                 <a href="#menu">Наше меню</a>
                 <a href="#gallery">Галерея</a>
                 <a href="#contact">Контакты</a>
+                <a href="/pages/catalog.html">Каталог</a>
             </div>
             <div class="call_block">
                 <span>0-(705)-55-00-66</span>
@@ -160,8 +170,12 @@
         </div>
     </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <script src="./script/index.js"></script>
+    <script src="./script/root.js"></script>
+    <script src="./script/localStorage.js"></script>
     <script src="/script/script.js"></script>
+    <script src="script/basket.js"></script>
     
 </body>
 </html>

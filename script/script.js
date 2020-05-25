@@ -56,18 +56,6 @@ const burger = document.querySelector('.menu_btn'),
           burgerActive.classList.toggle("burger__active")
       })
 
-$(document).ready(function() {
- 
- 
-    $("a.topLink").click(function() {
-       $("html, body").animate({
-          scrollTop: $($(this).attr("href")).offset().top + "px"
-       }, {
-          duration: 500,
-          easing: "swing"
-       });
-       return false;
-    });
-  
-  
- });
+
+ //get data from JSON file
+
