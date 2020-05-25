@@ -164,10 +164,3 @@ catalogBlocks.forEach(elem =>{
         catalog.showCatalog(elem.classList[1]);
     })
 });
-
-// 
-
-//     searchInp.addEventListener('keyup', () =>{
-
-//     catalog.searchCatalog(searchInp.value.toLowerCase());
-// })

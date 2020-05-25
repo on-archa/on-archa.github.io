@@ -254,6 +254,10 @@ nav input:focus{
     color: var(--bgc_add);
 }
 
+.order__list{
+    display: none;
+}
+
 .search_block{   
     margin-top: 4em;
 }

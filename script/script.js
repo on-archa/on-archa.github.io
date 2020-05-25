@@ -57,5 +57,5 @@ const burger = document.querySelector('.menu_btn'),
       })
 
 
- //get data from JSON file
+
 

@@ -4,6 +4,10 @@ class Basket{
     handleClear(){
         ROOT_BASKET.innerHTML = ''
     }
+
+    sendForm(){
+        localStorage.clear();
+    }
     
 
     removeGood(id){
@@ -22,26 +26,37 @@ class Basket{
         catalog.showCatalog();
     }
 
-    payForm(){
+    payForm(elem){
+        const goodsStore = localStorageUtil.getGoods();
+        console.log(goodsStore);
+        if(elem !== 0){
+            
         const html = `
         <div class="basket__window--item">
             <div class="goods--info">
                 <div class="span" onclick="basket.handleClear()"></div>
                 <div class="form__block">
                     <h3>Заполните форму</h3>
-                    <form action="mail.php" method="POST"> 
+                    <form action="https://formspree.io/maypeqze" method="POST"> 
                         <input type="text" placeholder="Ваше имя" name="lastName">
-                        <input placeholder="Ваша фамилия name="firstName">
+                        <input placeholder="Ваша фамилия" name="firstName">
                         <input placeholder="Номер телефона" name="cellphone">
                         <input placeholder="Ваш адресс" name="adress">
-                        <button type="submit">Отправить</button>
+                        <input class="order__list" name="order" value="${goodsStore}">
+                        <button type="submit" onclick="basket.sendForm()">Отправить</button>
                     </form>
                 </div>
             </div>
         </div>
         `
-
         ROOT_BASKET.innerHTML = html;
+    }
+
+        else{
+            alert('Вы не выбрали товар')
+        }
+
+        
     }
 
 
@@ -49,7 +64,9 @@ class Basket{
         const goodsStore = localStorageUtil.getGoods();
         let popularItem = "";
         let sumCatalog = 0;
-        
+        let nameofGoods = goodsStore;
+
+
         DATA.forEach(({id, name, price, weight, image}) =>{
             if(goodsStore.indexOf(id) !== -1) {
                 popularItem += `
@@ -79,7 +96,7 @@ class Basket{
                 <div class="line"></div>
                 <div class="total">
                     <span>Итого к оплате: <span>${sumCatalog}c</span></span>
-                    <button onclick="basket.payForm()">Перейти к оплате</button>
+                    <button onclick="basket.payForm(${sumCatalog})">Перейти к оплате</button>
                 </div>
                 </div>              
             </div>
