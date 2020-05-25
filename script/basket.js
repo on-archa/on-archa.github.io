@@ -29,7 +29,7 @@ class Basket{
                 <div class="span" onclick="basket.handleClear()"></div>
                 <div class="form__block">
                     <h3>Заполните форму</h3>
-                    <form action="../mail.php" method="POST"> 
+                    <form action="mail.php" method="POST"> 
                         <input type="text" placeholder="Ваше имя" name="lastName">
                         <input placeholder="Ваша фамилия name="firstName">
                         <input placeholder="Номер телефона" name="cellphone">
