@@ -61,7 +61,7 @@ nav input:focus{
 
 .basket i{
     font-size: 2em;
-    transition: ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
     color: #fff;
 }
 
@@ -79,6 +79,7 @@ nav input:focus{
     justify-content: center;
     align-items: center;
     transform: translateX(-7px);
+    transition: all ease-in-out 0.2s;
 }
 
 .basket__window--item{
@@ -350,6 +351,7 @@ section{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .catalog__items ul li{
@@ -395,6 +397,7 @@ section{
     display: flex;
     list-style: none;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .popular__catalog ul li{
@@ -453,4 +456,100 @@ section{
     border: none;
 }
 
+@media screen and (max-width: 670px){
+    .header{
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        padding-bottom: 5em;
+    }
+
+    nav img{
+        width: 17em;
+    }
+    
+    .basket{
+        background-color: black;
+        position: fixed;
+        right: 0;
+        top: 40%;
+        background-color: var(--bgc_add);
+        border-radius: 50%;
+        width: 5em;
+        height: 5em;
+        display: flex;
+        cursor: pointer;
+    }
+
+    .basket:hover span{
+        transform: translateX(-15px);
+        z-index: -1;
+    }
+
+    .basket i{
+        margin-left: 25%;
+    }
+
+    .popular__card{
+        height: 26em;
+    }
+
+    .popular__catalog ul li{
+        margin-left: 3em;
+        margin-top: 2em;
+    }
+}
+
+@media screen and (max-width: 450px){
+    nav input{
+        width: 20em;
+    }
+
+    .catalog__card{
+        width: 20em;
+    }
+
+    .catalog__card span{
+        font-size: 1.5em;
+    }
+
+    .basket{
+        height: 6em;
+        width: 6em;
+    }
+
+    .basket i{
+        font-size: 2.2em;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .catalog__card + .catalog__card{
+        margin-top: 2em;
+    }
+    
+    .good--info img{
+        width: 13em;
+    }
+
+    .good--info__name{
+        font-size: 1.4em;
+    }
+
+    .basket--price__block span{
+        font-size: 1.5em;
+    }
+
+    .basket--price__block i{
+        font-size: 2.5em;
+    }
+
+    .total span{
+        font-size: 1.4em;
+    }
+
+    .total button{
+        font-size: 1.4em;
+    }
+}
 
